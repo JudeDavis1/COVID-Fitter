@@ -40,7 +40,7 @@ try:
 
     print("Initializing Regression model")
 
-    model = LogisticRegression()
+    model = LogisticRegression(epochs=10000)
 
     x, y = load_csv()
 
@@ -50,8 +50,8 @@ try:
     prediction = model.predict(x)  # overall prediction
     plt.scatter(x, y)
 
-    print(f"Model Prediction: {prediction}\n\n")
-    print("Model Accuracy: " + str(model.accuracy) + "\n\n")
+    print(f"Model Prediction: {prediction * 100}%\n\n")
+    print(f"Model Accuracy: {str(model.accuracy)}\n\n")
 
     if prediction >= .5:
         print("A second wave of COVID-19 is quite likely")
