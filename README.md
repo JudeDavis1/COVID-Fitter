@@ -1,3 +1,3 @@
 # COVID-Fitter
 
-A program which will analyse data from direct government CSV files for the UK, process, and also vomit wave predictions. 
+A program which will analyse data from direct government CSV files for the UK, process, and also commit wave predictions. 
